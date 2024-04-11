@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form>
+            <label for="mul">num1</label>
+            <input type="text" id="mul">
+           
+            <label for="divi">num2</label>
+            <input type="text" id="divi">
+
+            <button id="mul" onclick="multiply(); return false;">Multiply</button>
+            <button id="divi" onclick="division(); return false;">Division</button>
+        <p id="result">  </p>
+
+
+        </form>
+    
+<script>
+   
+
+    function multiply(){
+       
+        var num1=document.getElementById('mul').value;
+        var num2=document.getElementById('divi').value;
+        var result=num1*num2;
+        document.getElementById('result').innerText="the multiliplication is :"+result;
+        
+    }
+    function division(){
+        var num1=document.getElementById('mul').value;
+        var num2=document.getElementById('divi').value;
+        var result1=num1/num2;
+        document.getElementById('result').innerText="the division is :"+result1;
+    }
+</script>
+
+    
+</body>
+</html>
